@@ -14,7 +14,7 @@ const AppRouter = () => (
             <Route path="/courses" element={<CourseList />} />
             <Route path="/course/:cid" element={<CourseDetail />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="*" element={<PageNotFound />} />
         </Routes>
     </BrowserRouter>

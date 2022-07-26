@@ -1,12 +1,13 @@
 {
     "allCourses": [
         {
-            "tittle": "Java Full Stack Developer"
+            "tittle": "Java FullStack Developer Training"
         }
     ],
     "trendingCourses": [
         {
             "tittle": "Java Full Stack Developer"
         }
-    ]
+    ],
+    "baseUrl": "http://localhost:3000"
 }

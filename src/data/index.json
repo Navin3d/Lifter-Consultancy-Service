@@ -1,7 +1,37 @@
 {
     "allCourses": [
         {
-            "tittle": "Java FullStack Developer Training"
+            "id": 1,
+            "tittle": "Java FullStack Developer Training",
+            "description": "This is an training for maling u a java full stack developer...",
+            "shortDesc": [
+                "Starts From Tomorrow",
+                "Basics to Advanced Course",
+                "Get hands-on training with industry projects"
+            ],
+            "imageLocation": "./images/Java.png"
+        },
+        {
+            "id": 2,
+            "tittle": "React Developer Zero to Master",
+            "description": "This is an training for maling u a java full stack developer...",
+            "shortDesc": [
+                "HTML + CSS. No front-end dev is a stranger to HTML and CSS",
+                "JSX. In React, you never really touch HTML proper.",
+                "JavaScript Fundamentals + ES6"
+            ],
+            "imageLocation": "./images/react-redux.png"
+        },
+        {
+            "id": 3,
+            "tittle": "Unity Game Developer Build your own Game",
+            "description": "This is an training for maling u a java full stack developer...",
+            "shortDesc": [
+                "Pre-production and scoping. By no means exclusive to Unity development.",
+                "Smart use of the Asset Store.",
+                "Programming (for everyone!)"
+            ],
+            "imageLocation": "./images/Unity.webp"
         }
     ],
     "trendingCourses": [

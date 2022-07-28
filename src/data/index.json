@@ -1,4 +1,18 @@
 {
+    "availableCourseTitles": [
+        {
+            "id": 1,
+            "tittle": "Java Full Stack Developer"
+        },
+        {
+            "id": 2,
+            "tittle": "Unity Game Developer Build your own Game"
+        },
+        {
+            "id": 3,
+            "tittle": "React Developer Zero to Master"
+        }
+    ],
     "allCourses": [
         {
             "id": 1,

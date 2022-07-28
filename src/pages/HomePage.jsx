@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import Navbar from "../components/base/Navigation";
 import img1 from "../images/HomePage.jpg";
 import { AiOutlineArrowRight } from "react-icons/ai";

@@ -1,25 +1,37 @@
 import React, { useState } from "react";
-// import styled from "styled-components";
-import logo from "../../images/Lifterv4.png";
+import { NavLink, useLocation } from "react-router-dom";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
+
+import logo from "../../images/Lifterv4.png";
+
+import Data from "../../data";
+
+
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const location = useLocation();
+  const { pathname } = location;
+  const splitLocation = pathname.split("/");
+
+
   const MenuItems = () => {
     return (
       <div className="NavBar_MenuItems">
-        <ul className="items">
-          <li>
-            <a href="/">Home</a>
+        <ul>
+          <li className="Navbar_links">
+            <NavLink to="/" exact activeClassName="active-link" >Home</NavLink>
           </li>
-          <li>
-            <a href="/">Courses</a>
+          <li className="Navbar_links">
+            <NavLink to="/courses" activeClassName="active-link" >Courses</NavLink>
           </li>
-          <li>
-            <a href="/">About</a>
+          <li className="Navbar_links">
+            <NavLink to="/about" activeClassName="active-link" >About</NavLink>
           </li>
-          <li>
-            <a href="/">Contact</a>
+          <li className="Navbar_links">
+            <NavLink to="/contact" activeClassName="active-link" >Contact</NavLink>
           </li>
         </ul>
       </div>
@@ -37,24 +49,26 @@ const Navigation = () => {
         <div className="NavBar_Links">
           <ul>
             <li className="links">
-              <a href="/">Home</a>
+              <NavLink to="/" activeClassName="active-link" >Home</NavLink>
             </li>
             <div class="dropdown">
               <li>
-                <a href="/">Courses</a>
+                <NavLink to="/courses" activeClassName="active-link" >Courses</NavLink>
               </li>
               <div class="dropdown-content">
-                <a href="#">Java Development</a>
-                <a href="#">Web Development</a>
-                <a href="#">Automation</a>
+                {
+                  Data.availableCourseTitles.map(course => (
+                    <NavLink to={`/course/${course.id}`} activeClassName="active-link" >{ course.tittle }</NavLink>
+                  ))
+                }
               </div>
             </div>
 
             <li className="links">
-              <a href="/">About</a>
+              <NavLink to="/about" activeClassName="active-link" >About</NavLink>
             </li>
             <li className="links">
-              <a href="/">Contact</a>
+              <NavLink to="/contact" activeClassName="active-link" >Contact</NavLink>
             </li>
             <li className="Navbar_links">
               <p>

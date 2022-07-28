@@ -9,16 +9,16 @@ const Navigation = () => {
     return (
       <div className="NavBar_MenuItems">
         <ul>
-          <li>
+          <li className="Navbar_links">
             <a href="/">Home</a>
           </li>
-          <li>
+          <li className="Navbar_links">
             <a href="/">Courses</a>
           </li>
-          <li>
+          <li className="Navbar_links">
             <a href="/">About</a>
           </li>
-          <li>
+          <li className="Navbar_links">
             <a href="/">Contact</a>
           </li>
         </ul>
@@ -36,7 +36,7 @@ const Navigation = () => {
 
         <div className="NavBar_Links">
           <ul>
-            <li className="active">
+            <li className="links">
               <a href="/">Home</a>
             </li>
             <div class="dropdown">
@@ -50,13 +50,13 @@ const Navigation = () => {
               </div>
             </div>
 
-            <li>
+            <li className="links">
               <a href="/">About</a>
             </li>
-            <li>
+            <li className="links">
               <a href="/">Contact</a>
             </li>
-            <li>
+            <li className="Navbar_links">
               <p>
                 sbaaala@gmail.com
                 <br />

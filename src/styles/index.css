@@ -31,12 +31,12 @@
 .NavBar_Links p {
   margin: -0.5rem;
 }
-/* .NavBar_Links {
+.links a {
   background-image: linear-gradient(
     transparent 0%,
     transparent 90%,
-    hotpink 90%,
-    hotpink 100%
+    white 90%,
+    white 100%
   );
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -44,10 +44,10 @@
 
   transition: background-size 300ms;
 }
-.NavBar_Links:hover {
+.links:hover a {
   background-size: 100% 100%;
   background-position-x: left;
-} */
+}
 .LogoName {
   font-size: large;
 }
@@ -195,3 +195,11 @@
   align-items: center;
   padding: 0.5rem;
 }
+/* @media screen and(max-width:900px) { */
+/* .Homepage_illus img,
+  .Homepage1_content p,
+  button {
+    display: flex;
+    grid-column: 2rem;
+  }
+} */

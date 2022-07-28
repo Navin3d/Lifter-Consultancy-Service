@@ -1,27 +1,37 @@
 import React, { useState } from "react";
-// import styled from "styled-components";
-import logo from "../../images/Lifterv4.png";
+import { NavLink, useLocation } from "react-router-dom";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
+
+import logo from "../../images/Lifterv4.png";
+
+import Data from "../../data";
 
 
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const location = useLocation();
+  const { pathname } = location;
+  const splitLocation = pathname.split("/");
+
+
   const MenuItems = () => {
     return (
       <div className="NavBar_MenuItems">
         <ul>
-          <li>
-            <a href="/">Home</a>
+          <li className="Navbar_links">
+            <NavLink to="/" exact activeClassName="active-link" >Home</NavLink>
           </li>
-          <li>
-            <a href="/courses">Courses</a>
+          <li className="Navbar_links">
+            <NavLink to="/courses" activeClassName="active-link" >Courses</NavLink>
           </li>
-          <li>
-            <a href="/about">About</a>
+          <li className="Navbar_links">
+            <NavLink to="/about" activeClassName="active-link" >About</NavLink>
           </li>
-          <li>
-            <a href="/contact">Contact</a>
+          <li className="Navbar_links">
+            <NavLink to="/contact" activeClassName="active-link" >Contact</NavLink>
           </li>
         </ul>
       </div>
@@ -38,27 +48,29 @@ const Navigation = () => {
 
         <div className="NavBar_Links">
           <ul>
-            <li className="active">
-              <a href="/">Home</a>
+            <li className="links">
+              <NavLink to="/" activeClassName="active-link" >Home</NavLink>
             </li>
             <div class="dropdown">
               <li>
-                <a href="/courses">Courses</a>
+                <NavLink to="/courses" activeClassName="active-link" >Courses</NavLink>
               </li>
               <div class="dropdown-content">
-                <a href="#">Java Development</a>
-                <a href="#">Web Development</a>
-                <a href="#">Automation</a>
+                {
+                  Data.availableCourseTitles.map(course => (
+                    <NavLink to={`/course/${course.id}`} activeClassName="active-link" >{ course.tittle }</NavLink>
+                  ))
+                }
               </div>
             </div>
 
-            <li>
-              <a href="/about">About</a>
+            <li className="links">
+              <NavLink to="/about" activeClassName="active-link" >About</NavLink>
             </li>
-            <li>
-              <a href="/contact">Contact</a>
+            <li className="links">
+              <NavLink to="/contact" activeClassName="active-link" >Contact</NavLink>
             </li>
-            <li>
+            <li className="Navbar_links">
               <p>
                 sbaaala@gmail.com
                 <br />

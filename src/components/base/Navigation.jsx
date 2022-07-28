@@ -8,17 +8,17 @@ const Navigation = () => {
   const MenuItems = () => {
     return (
       <div className="NavBar_MenuItems">
-        <ul>
-          <li className="Navbar_links">
+        <ul className="items">
+          <li>
             <a href="/">Home</a>
           </li>
-          <li className="Navbar_links">
+          <li>
             <a href="/">Courses</a>
           </li>
-          <li className="Navbar_links">
+          <li>
             <a href="/">About</a>
           </li>
-          <li className="Navbar_links">
+          <li>
             <a href="/">Contact</a>
           </li>
         </ul>
@@ -66,8 +66,9 @@ const Navigation = () => {
           </ul>
         </div>
         <div className="menu_icon">
+          {MenuItems}
           {isNavOpen ? (
-            ({ MenuItems }, (<MdClose onClick={() => setIsNavOpen(false)} />))
+            <MdClose onClick={() => setIsNavOpen(false)} />
           ) : (
             <GiHamburgerMenu
               onClick={(e) => {

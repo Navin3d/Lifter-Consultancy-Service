@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import logo from "../../images/Lifterv4.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
+
+
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const MenuItems = () => {
@@ -13,13 +15,13 @@ const Navigation = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/">Courses</a>
+            <a href="/courses">Courses</a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="/about">About</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -41,7 +43,7 @@ const Navigation = () => {
             </li>
             <div class="dropdown">
               <li>
-                <a href="/">Courses</a>
+                <a href="/courses">Courses</a>
               </li>
               <div class="dropdown-content">
                 <a href="#">Java Development</a>
@@ -51,10 +53,10 @@ const Navigation = () => {
             </div>
 
             <li>
-              <a href="/">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
             <li>
               <p>

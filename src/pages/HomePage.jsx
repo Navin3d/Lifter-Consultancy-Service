@@ -17,7 +17,7 @@ const HomePage = () => (
         </p>
         <div className="getstarted_btn">
           <button className="btn">
-            Get Started <AiOutlineArrowRight />
+            <a className="link" href="/courses">Get Started <AiOutlineArrowRight /></a>
           </button>
         </div>
       </div>

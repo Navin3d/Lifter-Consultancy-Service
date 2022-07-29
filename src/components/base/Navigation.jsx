@@ -80,8 +80,9 @@ const Navigation = () => {
           </ul>
         </div>
         <div className="menu_icon">
+          {MenuItems}
           {isNavOpen ? (
-            ({ MenuItems }, (<MdClose onClick={() => setIsNavOpen(false)} />))
+            <MdClose onClick={() => setIsNavOpen(false)} />
           ) : (
             <GiHamburgerMenu
               onClick={(e) => {

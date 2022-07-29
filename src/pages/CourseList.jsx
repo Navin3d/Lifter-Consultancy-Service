@@ -3,8 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Navbar from "../components/base/Navigation";
 import CourseCard from "../components/CourseCard";
+import Footer from "../components/base/Footer";
 
 import Data from "../data";
+
 
 const CourseList = () => {
 
@@ -30,30 +32,9 @@ const CourseList = () => {
                             </Row>
                         ))
                     }
-
-                    {/* <Row>
-                        <Col></Col>
-                        <Col sm={10}>
-                            <CourseCard />
-                        </Col>
-                        <Col></Col>
-                    </Row>
-                    <Row>
-                        <Col></Col>
-                        <Col sm={10}>
-                            <CourseCard />
-                        </Col>
-                        <Col></Col>
-                    </Row>
-                    <Row>
-                        <Col></Col>
-                        <Col sm={10}>
-                            <CourseCard />
-                        </Col>
-                        <Col></Col>
-                    </Row> */}
                 </Row>
             </Container>
+            <Footer />
         </div>
     );
 };

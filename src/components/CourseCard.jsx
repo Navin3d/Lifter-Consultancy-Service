@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { StarFill } from 'react-bootstrap-icons';
 import { useNavigate } from "react-router-dom";
 
+
 const CourseCard = ({ id, tittle, shortDesc, imageLocation }) => {
 
     const navigate = useNavigate();
@@ -28,15 +29,6 @@ const CourseCard = ({ id, tittle, shortDesc, imageLocation }) => {
                                         </Row>
                                     ))
                                 }
-                                {/* <Row>
-                                    <p><StarFill className="pt-icon"/> Starts From Tomorrow</p>
-                                </Row>
-                                <Row>
-                                    <p><StarFill className="pt-icon"/> Basics to Advanced Course</p>
-                                </Row>
-                                <Row>
-                                    <p><StarFill className="pt-icon"/> Get hands-on training with industry projects</p>
-                                </Row> */}
                             </Col>
                         </div>
                     </Col>

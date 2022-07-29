@@ -18,6 +18,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 import Lifter from "../../images/Lifterv4.png";
 import Data from "../../data";
+import { height } from "@mui/system";
 
 
 const pages = [
@@ -39,7 +40,7 @@ const pages = [
   }
 ];
 
-const settings = ['', '', '', ''];
+const settings = [];
 
 const ResponsiveAppBar = () => {
 
@@ -179,7 +180,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <b style={{ color: "white" }}>+91 9345702385</b>
               </IconButton>
             </Tooltip>
             <Menu

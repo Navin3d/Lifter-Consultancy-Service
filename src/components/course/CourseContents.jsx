@@ -23,7 +23,7 @@ const courseContents = ({ courseContents }) => (
                                         <AccordionItem key={content.id} uuid={content.id}>
                                             <AccordionItemHeading>
                                                 <AccordionItemButton>
-                                                    { content.tittle }
+                                                    <h5>{ content.tittle }</h5>
                                                 </AccordionItemButton>
                                             </AccordionItemHeading>
                                             <AccordionItemPanel>

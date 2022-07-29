@@ -1,99 +1,162 @@
-import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+import MenuItem from '@mui/material/MenuItem';
+import AdbIcon from '@mui/icons-material/Adb';
 
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
+const pages = ['Products', 'Pricing', 'Blog'];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-import logo from "../../images/Lifterv4.png";
+const ResponsiveAppBar = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-import Data from "../../data";
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
 
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
-const Navigation = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const location = useLocation();
-  const { pathname } = location;
-  const splitLocation = pathname.split("/");
-
-
-  const MenuItems = () => {
-    return (
-      <div className="NavBar_MenuItems">
-        <ul>
-          <li className="Navbar_links">
-            <NavLink to="/" exact activeClassName="active-link" >Home</NavLink>
-          </li>
-          <li className="Navbar_links">
-            <NavLink to="/courses" activeClassName="active-link" >Courses</NavLink>
-          </li>
-          <li className="Navbar_links">
-            <NavLink to="/about" activeClassName="active-link" >About</NavLink>
-          </li>
-          <li className="Navbar_links">
-            <NavLink to="/contact" activeClassName="active-link" >Contact</NavLink>
-          </li>
-        </ul>
-      </div>
-    );
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
   };
 
   return (
-    <>
-      <div className="NavBar">
-        <div className="NavBar_Logo">
-          <img src={logo} alt="logo"></img>
-          <span className="LogoName">Lifter</span>
-        </div>
+    <AppBar position="static">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            LOGO
+          </Typography>
 
-        <div className="NavBar_Links">
-          <ul>
-            <li className="links">
-              <NavLink to="/" activeClassName="active-link" >Home</NavLink>
-            </li>
-            <div class="dropdown">
-              <li>
-                <NavLink to="/courses" activeClassName="active-link" >Courses</NavLink>
-              </li>
-              <div class="dropdown-content">
-                {
-                  Data.availableCourseTitles.map(course => (
-                    <NavLink to={`/course/${course.id}`} activeClassName="active-link" >{ course.tittle }</NavLink>
-                  ))
-                }
-              </div>
-            </div>
-
-            <li className="links">
-              <NavLink to="/about" activeClassName="active-link" >About</NavLink>
-            </li>
-            <li className="links">
-              <NavLink to="/contact" activeClassName="active-link" >Contact</NavLink>
-            </li>
-            <li className="Navbar_links">
-              <p>
-                sbaaala@gmail.com
-                <br />
-                +91 90952 05004
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div className="menu_icon">
-          {MenuItems}
-          {isNavOpen ? (
-            <MdClose onClick={() => setIsNavOpen(false)} />
-          ) : (
-            <GiHamburgerMenu
-              onClick={(e) => {
-                e.stopPropagation();
-                setIsNavOpen(true);
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
               }}
-            />
-          )}
-        </div>
-      </div>
-    </>
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            LOGO
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+
+          <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              </IconButton>
+            </Tooltip>
+            <Menu
+              sx={{ mt: '45px' }}
+              id="menu-appbar"
+              anchorEl={anchorElUser}
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElUser)}
+              onClose={handleCloseUserMenu}
+            >
+              {settings.map((setting) => (
+                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">{setting}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
-export default Navigation;
+export default ResponsiveAppBar;

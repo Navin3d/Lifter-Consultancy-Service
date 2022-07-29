@@ -17,13 +17,248 @@
         {
             "id": 1,
             "tittle": "Java FullStack Developer Training",
+            "subTittle": "Java Developer",
+            "status": "Not Yet Started",
+            "price": 15000,
+            "instructor": "S Balachander",
+            "noOfSessions": 20,
+            "effectiveCourseHours": 30,
+            "instructionMode": "Online / Offline",
+
             "description": "This is an training for maling u a java full stack developer...",
             "shortDesc": [
                 "Starts From Tomorrow",
                 "Basics to Advanced Course",
                 "Get hands-on training with industry projects"
             ],
-            "imageLocation": "./images/Java.png"
+            "imageLocation": "./images/Java.png",
+            "courseContents": [
+                {
+                    "id": "a",
+                    "tittle": "Skills Required to become a Backend/Server-side Developer.",
+                    "subTittles": [
+                        "Java",
+                        "Servlet / JSP",
+                        "Spring Framework ( Core, AOP, MVC, DATA JPA, JDBC )",
+                        "Hibernate framework.",
+                        "Database (Oracle, SQL Server, MySQL, MongoDB ..)",
+                        "Server (Tomcat, Glashfish, Weblogic, Webspere)",
+                        "Web Service (REST & SOAP)",
+                        "Junit (Unit Testing)",
+                        "Security",
+                        "Version Control (Git, SVN)",
+                        "Maven, Gradle (Build Tool)",
+                        "Jenkins",
+                        "Docker, Kubernates",
+                        "Cloud Computing (AWS, Azure..)",
+                        "Basic exposure to HTML and CSS",
+                        "XML, YML"
+                    ]
+                },
+                {
+                    "id": "b",
+                    "tittle": "Core Java.",
+                    "subTittles": [
+                        "How to install Java",
+                        "Difference between JDK and JRE",
+                        "JDK folder structure",
+                        "How to set the environment variable (PATH and JAVA_HOME )",
+                        "What is JVM and byte code?",
+                        "Understand the development tools available in JAVA_HOME\bin directory.",
+                        "What is class and object? How to create object?",
+                        "What is keyword?",
+                        "What is local variable? What is identifier?",
+                        "What is comment? Single line and multi-line",
+                        "Data types – primitive and reference / object",
+                        "Variable types – Local, instance, class",
+                        "Casting – implicit, explicit",
+                        "Operator – Arithmetic , Relational , Ternary",
+                        "Loops and Control structure",
+                        "Method / Function / Constructor",
+                        "Overloading, Overriding",
+                        "Variable scopes",
+                        "Array",
+                        "String class",
+                        "Packages and access modifiers",
+                        "Instance member vs class members",
+                        "this,  super , final",
+                        "Inheritance",
+                        "Interface vs abstract class",
+                        "Exception Handling",
+                        "Collections",
+                        "Java 5 and 7 features",
+                        "Inner class",
+                        "Java 8",
+                        "JDBC",
+                        "Thread Basics",
+                        "Singleton pattern"
+                    ]
+                },
+                {
+                    "id": "c",
+                    "tittle": "Servlet/JSP",
+                    "subTittles": [
+                        "Static web pages, Dynamic Web application",
+                        "What is HTTP Protocol?",
+                        "What is Http Request and Http Response?",
+                        "Request Headers / body / Query Params",
+                        "Response Headers / status code / body",
+                        "Headers: Accept / Content – Type / Authorization ",
+                        "Response Status Codes",
+                        "What is JEE?",
+                        "What is API , Specification and Providers?",
+                        "1 – Tier, 2 – Tier, 3 – Tier, N – Tier architecture / application",
+                        "Web Server?",
+                        "What is web container / EJB container?",
+                        "What is Servlet and Lifecycle ?",
+                        "Types of Http Request methods",
+                        "GET vs POST",
+                        "HttpRequest , HttpResponse object",
+                        "ServletContext object",
+                        "HttpSession management",
+                        "Cookies",
+                        "What is Interceptor?",
+                        "What is Filter?",
+                        "What is Listener? Types of Listener?",
+                        "What is JSP?",
+                        "Tag Lib Libraires",
+                        "MVC Pattern"
+                    ]
+                },
+                {
+                    "id": "d",
+                    "tittle": "Database",
+                    "subTittles": [
+                        "What is Database?",
+                        "How to install My SQL and My SQL workbench?",
+                        "How to create database and table in My SQL?",
+                        "What is Table/Row/Column?",
+                        "What is Primary key?",
+                        "What is Foreign Key?",
+                        "What is composite key?",
+                        "What is Auto increment?",
+                        "What is NOT NULL constraint?",
+                        "What is unique key?",
+                        "CRUD operation in Database?",
+                        "Scalar vs Group functions?",
+                        "Relationship between tables? One to one, one to many, many to many",
+                        "Inner join, outer join, self-join, cross join"
+                    ]
+                },
+                {
+                    "id": "e",
+                    "tittle": "Hibernate",
+                    "subTittles": [
+                        "What is Hibernate?",
+                        "What is ORM and ORM framework?",
+                        "What is DAO pattern?",
+                        "Hibernate Architecture components?",
+                        "Persistence/ Entity class",
+                        "Annotations used in Entity class.",
+                        "Entity class with component class",
+                        "Mapping associations",
+                        "What is cascade?",
+                        "What is Lazy loading Eager loading?",
+                        "Object state",
+                        "Mapping inheritance",
+                        "HQL"
+                    ]
+                },
+                {
+                    "id": "f",
+                    "tittle": "Spring",
+                    "subTittles": [
+                        "What is Spring?",
+                        "Why is spring called application framework?",
+                        "Spring container",
+                        "Spring framework",
+                        "Spring benefits",
+                        "Spring Features",
+                        "IOC and AOP"
+                    ]
+                },
+                {
+                    "id": "g",
+                    "tittle": "Spring Core",
+                    "subTittles": [
+                        "What is Bean",
+                        "Spring IOC container",
+                        "How to define the spring bean",
+                        "Bean Factory vs Application Context",
+                        "Spring lifecycle",
+                        "Bean scopes"
+                    ]
+                },
+                {
+                    "id": "h",
+                    "tittle": "Spring AOP",
+                    "subTittles": [
+                        "What is AOP and benefits",
+                        "AOP Concepts",
+                        "Types of advice"
+                    ]
+                },
+                {
+                    "id": "i",
+                    "tittle": "Spring MVC",
+                    "subTittles": [
+                        "What is the use of Spring MVC?",
+                        "Important components of Spring MVC",
+                        "What is Front Controller pattern",
+                        "What is DispatchServlet",
+                        "Annotations used in Spring MVC",
+                        "Controller and RestController",
+                        "RequestMapping",
+                        "RequestParam",
+                        "PathVariable",
+                        "RequestHeader",
+                        "ModelAttribute",
+                        "RequestBody",
+                        "Validated",
+                        "Component , Service, Repository",
+                        "Component Scan"
+                    ]
+                },
+                {
+                    "id": "j",
+                    "tittle": "Spring JDBC",
+                    "subTittles": [
+                        "What is DataSource?",
+                        "What is JdbcTemplate ?",
+                        "What is RowMapper?",
+                        "What is PreparedStatementSetter",
+                        "How to do CRUD with Spring JDBC?"
+                    ]
+                },
+                {
+                    "id": "k",
+                    "tittle": "Spring Data JPA",
+                    "subTittles": [
+                        "Benefit of Spring DATA JPA",
+                        "How to create a Spring Data Repository class",
+                        "CRUDRepository, JpaRepository, PagingSortingRepository",
+                        "@Query ",
+                        "Filter the records using findBy…",
+                        "CRUD with Spring DATA JPA"
+                    ]
+                },
+                {
+                    "id": "l",
+                    "tittle": "Spring Boot",
+                    "subTittles": [
+                        "How to create a Spring boot application?",
+                        "Advantage of Spring Boot?",
+                        "What is Spring boot starter?",
+                        "Spring Boot Application main class  / @SpringBootApplication",
+                        "@EnableAutoConfiguraion / @Configuration",
+                        "application.properties or application.yml",
+                        "Spring boot dev tool starter",
+                        "Spring boot actuator",
+                        "How to run the Spring boot application",
+                        "@Value , @ConfigurationProperties"
+                    ]
+                }
+            ]
         },
         {
             "id": 2,

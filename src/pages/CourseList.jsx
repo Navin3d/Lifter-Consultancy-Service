@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Navbar from "../components/base/Navigation";
-import CourseCard from "../components/CourseCard";
+import CourseCard from "../components/course/CourseCard";
 import Footer from "../components/base/Footer";
 
 import Data from "../data";

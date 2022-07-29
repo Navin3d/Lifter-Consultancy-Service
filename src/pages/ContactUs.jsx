@@ -13,7 +13,7 @@ const ContactUs = () => (
                     <Col>
                         <img className="map-logo" src="./images/MapView.png" alt="map-view" />
                     </Col>
-                    <Col>
+                    <Col sm>
                         <div className="address-box">
                             <h5>Head Office:</h5>
                                 <p>

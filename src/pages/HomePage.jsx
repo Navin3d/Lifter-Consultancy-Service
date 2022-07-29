@@ -71,39 +71,40 @@ const HomePage = () => (
       <div className="top_rated_courses">
         <h1>Top-Trending-Courses</h1>
       </div>
+      <div className="Course_card">
+        <div className="most_rated_1">
+          <h3>Java Fullstack Developer</h3>
+          <img src={java} alt="java"></img>
 
-      <div className="most_rated_1">
-        <h3>Java Fullstack Developer</h3>
-        <img src={java} alt="java"></img>
+          <ul>
+            <li>Starts from ....</li>
+            <li>Basics to Advanced</li>
+            <li>Get hands-on training with industry projects</li>
+          </ul>
+          <button className="join_btn">Join Now</button>
+        </div>
+        <div className="most_rated_1">
+          <h3>Java Fullstack Developer</h3>
+          <img src={java} alt="java"></img>
 
-        <ul>
-          <li>Starts from ....</li>
-          <li>Basics to Advanced</li>
-          <li>Get hands-on training with industry projects</li>
-        </ul>
-        <button className="join_btn">Join Now</button>
-      </div>
-      <div className="most_rated_2">
-        <h3>Java Fullstack Developer</h3>
-        <img src={java} alt="java"></img>
+          <ul>
+            <li>Starts from ....</li>
+            <li>Basics to Advanced</li>
+            <li>Get hands-on training with industry projects</li>
+          </ul>
+          <button className="join_btn">Join Now</button>
+        </div>
+        <div className="most_rated_1">
+          <h3>Java Fullstack Developer</h3>
+          <img src={java} alt="java"></img>
 
-        <ul>
-          <li>Starts from ....</li>
-          <li>Basics to Advanced</li>
-          <li>Get hands-on training with industry projects</li>
-        </ul>
-        <button className="join_btn">Join Now</button>
-      </div>
-      <div className="most_rated_3">
-        <h3>Java Fullstack Developer</h3>
-        <img src={java} alt="java"></img>
-
-        <ul>
-          <li>Starts from ....</li>
-          <li>Basics to Advanced</li>
-          <li>Get hands-on training with industry projects</li>
-        </ul>
-        <button className="join_btn">Join Now</button>
+          <ul>
+            <li>Starts from ....</li>
+            <li>Basics to Advanced</li>
+            <li>Get hands-on training with industry projects</li>
+          </ul>
+          <button className="join_btn">Join Now</button>
+        </div>
       </div>
     </div>
   </div>

@@ -1,11 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
 import Navbar from "../components/base/Navigation";
+import Footer from "../components/base/Footer";
 import img1 from "../images/HomePage.jpg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import img3 from "../images/img3.jpg";
 import java from "../images/Java.png";
+
+
 const HomePage = () => (
   <div>
     <Navbar />
@@ -107,6 +110,7 @@ const HomePage = () => (
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 );
 

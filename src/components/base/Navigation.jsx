@@ -85,7 +85,7 @@ const ResponsiveAppBar = () => {
   
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={Lifter} alt="lifter logo" style={{ maxWidth: "45px" }} />&nbsp;

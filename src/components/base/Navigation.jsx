@@ -39,7 +39,7 @@ const pages = [
   }
 ];
 
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['', '', '', ''];
 
 const ResponsiveAppBar = () => {
 

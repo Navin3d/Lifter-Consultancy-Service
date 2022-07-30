@@ -9,9 +9,8 @@ import img1 from "../images/HomePage.jpg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import img3 from "../images/img3.jpg";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
-import Data from "../data";
 import { getTrendingCourses } from "../data/selectors";
 
 

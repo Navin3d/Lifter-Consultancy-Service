@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { StarFill } from 'react-bootstrap-icons';
 import { useNavigate } from "react-router-dom";
 
@@ -19,7 +19,7 @@ const CourseCard = ({ id, tittle, shortDesc, imageLocation }) => {
                     <Col sm={4}>
                         <img className="course-pic" src={imageLocation} alt="course pic" />
                     </Col>
-                    <Col sm={8}>
+                    <Col sm={6}>
                         <div className="course-short-desc">
                             <Col>
                                 {
@@ -31,6 +31,9 @@ const CourseCard = ({ id, tittle, shortDesc, imageLocation }) => {
                                 }
                             </Col>
                         </div>
+                    </Col> 
+                    <Col sm={2}>
+                        <Button variant="outline-success" onClick={handleClick}>More info...</Button>
                     </Col>
                 </Row>
             </Container>

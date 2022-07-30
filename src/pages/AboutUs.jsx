@@ -25,8 +25,7 @@ const AboutUs = () => (
                   Lifter Consultancy Service is a software development and software
                   training company, to fulfil the client needs by providing quality
                   developers and to train the individuals to get exact skill to be
-                  become a software developer to work in projects. Every one win
-                  strategy.
+                  become a software developer to work in projects.
                 </p>
               </div>
 

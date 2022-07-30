@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from 'react';
 import { NavLink } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,15 +10,12 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 import Lifter from "../../images/Lifterv4.png";
-import Data from "../../data";
-import { height } from "@mui/system";
 
 
 const pages = [
@@ -46,8 +43,8 @@ const ResponsiveAppBar = () => {
 
   const navigate = useNavigate();
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -74,7 +71,8 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            // href="/"
+            style={{ textDecoration: "none" }}
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -85,7 +83,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            Lifters
+            Lifters Consultancy Service
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -130,6 +128,7 @@ const ResponsiveAppBar = () => {
             noWrap
             component="a"
             href=""
+            style={{ textDecoration: "none" }}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -141,7 +140,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            Lifters
+            Lifters Consultancy Service
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

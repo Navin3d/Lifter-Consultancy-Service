@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { CameraVideoFill, AlarmFill, BookFill, TrophyFill } from "react-bootstrap-icons";
 
 const CourseFeatures = () => (

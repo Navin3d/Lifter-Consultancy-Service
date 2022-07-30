@@ -7,7 +7,7 @@ const Featured = ({ id, tittle, imageLocation, shortDescription }) => {
     const navigate = useNavigate();
 
     return(
-        <Col sm={4}>
+        <Col sm={4} style={{ paddingBottom: "3%" }}>
             <div className="most_rated_1" onClick={() => { navigate(`/course/${id}`) }}>
                 <h3>{ tittle }</h3>
                 <img src={imageLocation} alt="java"></img>

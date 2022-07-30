@@ -1,18 +1,4 @@
 {
-    "availableCourseTitles": [
-        {
-            "id": 1,
-            "tittle": "Java Full Stack Developer"
-        },
-        {
-            "id": 2,
-            "tittle": "Unity Game Developer Build your own Game"
-        },
-        {
-            "id": 3,
-            "tittle": "React Developer Zero to Master"
-        }
-    ],
     "allCourses": [
         {
             "id": 1,
@@ -283,10 +269,7 @@
             "imageLocation": "./images/Unity.webp"
         }
     ],
-    "trendingCourses": [
-        {
-            "tittle": "Java Full Stack Developer"
-        }
-    ],
+    "trendingCourses": [ 1, 2, 3 ],
+
     "baseUrl": "http://localhost:3000"
 }

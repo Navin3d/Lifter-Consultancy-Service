@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from 'react-bootstrap';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -62,28 +62,7 @@ const ResponsiveAppBar = () => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
-  };
-
-
-  const [location, setLocation] = useState();
-
-    useEffect(() => {
-        const loc = (window.location.href).split(Data.baseUrl);
-
-        if(loc[1] === "/contact") {
-            setLocation("contact");
-        } else if(loc[1] === "/courses") {
-            setLocation("courses");
-        } else if(loc[1] === "/about") {
-            setLocation("about");
-        } else if(loc[1] === "/") {
-            setLocation("home");
-        } else {
-            setLocation("")
-        }
-
-    }, []);
-  
+  };  
 
   return (
     <AppBar position="fixed">
@@ -139,7 +118,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} className={ (location === page.name) && "active-link" } onClick={() => { navigate(page.url) }}>
+                <MenuItem key={page} onClick={() => { navigate(page.url) }}>
                   <Typography textAlign="center" ><NavLink to={`${page.url}`}>{page.name}</NavLink></Typography>
                 </MenuItem>
               ))}
@@ -167,7 +146,6 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                className={ (location == page.name) ? "summa" : "active-link" }
                 key={page}
                 onClick={() => { navigate(page.url) }}
                 sx={{ my: 2, color: 'white', display: 'block' }}

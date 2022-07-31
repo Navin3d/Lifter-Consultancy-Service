@@ -32,7 +32,7 @@ const AboutUs = () => (
               <div className="about_info">
                 <p>
                   We train the individuals by experienced developers who can share
-                  their real time experience in Software development. y Lifter
+                  their real time experience in Software development. Lifter
                   Consultancy Service believes in every one win in their goal. We
                   are benefited as a company, individuals and graduates get
                   benefited as trained to get a job and client is benefitted to get

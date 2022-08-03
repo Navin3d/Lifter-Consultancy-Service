@@ -82,7 +82,7 @@ const CourseDetail = () => {
         <div>
             <Navbar />
             <div className="course-header">
-                        <CourseHeader tittle={course.tittle} subTittle={course.subTittle} status={course.status} price={course.price} instructor={course.instructor} effectiveCourseHours={course.effectiveCourseHours} instructionMode={course.instructionMode} noOfSessions={course.noOfSessions} />
+                <CourseHeader tittle={course.tittle} subTittle={course.subTittle} status={course.status} price={course.price} instructor={course.instructor} effectiveCourseHours={course.effectiveCourseHours} instructionMode={course.instructionMode} noOfSessions={course.noOfSessions} />
             </div>
             <Container>
                 <Row>

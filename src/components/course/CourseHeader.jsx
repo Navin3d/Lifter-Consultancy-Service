@@ -16,14 +16,14 @@ const CourseHeader = ({ tittle, subTittle, status, price, instructor, effectiveC
     const renderContent = (column = 2) => (
         <Descriptions size="small" column={column}>
             <Descriptions.Item label="Instructor">{ instructor }</Descriptions.Item>
-            <Descriptions.Item label="Sessions">
+            <Descriptions.Item label="Course Duration">
             <a>{ noOfSessions }</a>
             </Descriptions.Item>
-            <Descriptions.Item label="Sessions From">{ today }</Descriptions.Item>
-            <Descriptions.Item label="Effective Time">{ effectiveCourseHours } HRS</Descriptions.Item>
             <Descriptions.Item label="Instruction Mode">
                 { instructionMode }
             </Descriptions.Item>
+            {/* <Descriptions.Item label="Sessions From">{ today }</Descriptions.Item> */}
+            <Descriptions.Item label="Effective Time">{ effectiveCourseHours } HRS</Descriptions.Item>
         </Descriptions>
     );
 
@@ -35,13 +35,13 @@ const CourseHeader = ({ tittle, subTittle, status, price, instructor, effectiveC
             justifyContent: 'flex-end',
             }}
         >
-            <Statistic
-            title="Status"
-            value={ status }
-            style={{
-                marginRight: 32,
-            }}
-            />
+            {/* <Statistic
+                title="Status"
+                value={ status }
+                style={{
+                    marginRight: 32,
+                }}
+            /> */}
             <Statistic title="Price" prefix="₹" value={ price } />
         </div>
     );

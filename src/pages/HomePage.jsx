@@ -71,7 +71,7 @@ const HomePage = () => {
 
       <div className="section">
         <Row>
-          <h3 className="sub-tittle">Intoduction</h3>
+          {/* <h3 className="sub-tittle">Intoduction</h3> */}
           <Col sm={6}>
 
             <div className="intro-content">

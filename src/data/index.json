@@ -5,10 +5,10 @@
       "tittle": "Java FullStack Developer Training",
       "subTittle": "Java Developer",
       "status": "Not Yet Started",
-      "price": 15000,
+      "price": 18000,
       "instructor": "S Balachander",
-      "noOfSessions": 20,
-      "effectiveCourseHours": 30,
+      "noOfSessions": "80 Days",
+      "effectiveCourseHours": 80,
       "instructionMode": "Online / Offline",
 
       "description": "This is an training for maling u a java full stack developer...",
@@ -21,28 +21,212 @@
       "courseContents": [
         {
           "id": "a",
-          "tittle": "Skills Required to become a Backend/Server-side Developer.",
+          "tittle": "Skills Required to become a UI Developer.",
           "subTittles": [
-            "Java",
-            "Servlet / JSP",
-            "Spring Framework ( Core, AOP, MVC, DATA JPA, JDBC )",
-            "Hibernate framework.",
-            "Database (Oracle, SQL Server, MySQL, MongoDB ..)",
-            "Server (Tomcat, Glashfish, Weblogic, Webspere)",
-            "Web Service (REST & SOAP)",
-            "Junit (Unit Testing)",
-            "Security",
-            "Version Control (Git, SVN)",
-            "Maven, Gradle (Build Tool)",
-            "Jenkins",
-            "Docker, Kubernates",
-            "Cloud Computing (AWS, Azure..)",
-            "Basic exposure to HTML and CSS",
-            "XML, YML"
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "TypeScript",
+            "NodeJS",
+            "NodeJS"
           ]
         },
         {
           "id": "b",
+          "tittle": "HTML Fundamentals Introduction",
+          "subTittles": [
+            "HTML Text",
+            "HTML Lists",
+            "HTML Links",
+            "HTML Tables",
+            "HTML Form and Form Elements",
+            "HTML Form and Form Elements",
+            "HTML Form inputs",
+            "HTML Form and Form Elements"
+          ]
+        },
+        {
+          "id": "c",
+          "tittle": "HTML5",
+          "subTittles": [
+            "Introduction to HTML5",
+            "Page Layout Semantic Elements",
+            "Form Elements and Attributes",
+            "Working with Canvas",
+            "Scalable Vector Graphics (SVG)",
+            "Media - Audio and Video",
+            "Drag and Drop",
+            "Web Storage"
+          ]
+        },
+        {
+          "id": "d",
+          "tittle": "CSS",
+          "subTittles": [
+            "Working with CSS",
+            "CSS Rules",
+            "CSS Selectors",
+            "CSS Cascade",
+            "CSS Fonts and Typography",
+            "Working with Links and List",
+            "Working with Table",
+            "CSS Color & Positioning",
+            "CSS Box Model",
+            "CSS Display and Positioning"
+          ]
+        },
+        {
+          "id": "e",
+          "tittle": "CSS3",
+          "subTittles": [
+            "Working with CSS3",
+            "CSS3 Borders",
+            "CSS3 Backgrounds",
+            "CSS3 Gradients",
+            "CSS3 Text Effects",
+            "CSS3 Web Fonts",
+            "CSS3 2D Transforms",
+            "CSS3 3D Transforms",
+            "CSS3 Transitions and Animations"
+          ]
+        },
+        {
+          "id": "f",
+          "tittle": "JAVASCRIPT",
+          "subTittles": [
+            "Introduction",
+            "Variable Declaration",
+            "Arithmetic Operations",
+            "Array",
+            "Array Methods",
+            "String",
+            "String Method",
+            "JavaScript Function",
+            "Function Closure",
+            "Prototype Chaining",
+            "Regular Expression",
+            "Error Handling",
+            "Event Listener",
+            "Date Methods",
+            "JavaScript Form Validations",
+            "Navigator",
+            "E6 Features"
+          ]
+        },
+        {
+          "id": "g",
+          "tittle": "jQuery",
+          "subTittles": [
+            "jQuery Introduction",
+            "jQuery Selectors",
+            "Find Dropdown Selected Item",
+            "jQuery Document Traversal",
+            "jQuery Event",
+            "jQuery Effects",
+            "jQuery Effects",
+            "jQuery UI"
+          ]
+        },
+        {
+          "id": "h",
+          "tittle": "Bootstrap3",
+          "subTittles": [
+            "Working with Bootstrap 3",
+            "Bootstrap Grid System",
+            "Bootstrap Text/Typography",
+            "Bootstrap Images",
+            "Bootstrap Jumbotron",
+            "Bootstrap Buttons",
+            "Bootstrap Button Groups",
+            "Bootstrap Glyphicons",
+            "Bootstrap Pagination",
+            "Bootstrap Pager",
+            "Bootstrap List Groups",
+            "Bootstrap Forms",
+            "Bootstrap Inputs",
+            "Bootstrap Carousel",
+            "Bootstrap Plugins"
+          ]
+        },
+        {
+          "id": "i",
+          "tittle": "TYPESCRIPT",
+          "subTittles": [
+            "Introduction",
+            "Features of Typescript",
+            "Why use Typescript",
+            "Component of Typescript",
+            "Typescript – Environment Setup",
+            "Basic Syntax (Compiler Flags, Identifiers & Object Orientation)",
+            "Inferred Typing in Typescript ",
+            "Variable Declaration Types",
+            "Tuples, Enum, Nullable, Union (New types in Typescript)",
+            "Typescript Decision making conditions",
+            "Typescript Function",
+            "Inheritance and Constructor",
+            "Static properties and Methods",
+            "Abstract Class",
+            "Private Constructor",
+            "Singletons",
+            "Namespace Modules"
+          ]
+        },
+        {
+          "id": "j",
+          "tittle": "Angular",
+          "subTittles": [
+            "Setting up environment for Angular ( NodeJS, npm)",
+            "Modules",
+            "Architecture",
+            "Components",
+            "Templates",
+            "Directives",
+            "Meta Data",
+            "Data Binding",
+            "Curd Operations Using HTTP",
+            "Error Handling",
+            "Routing",
+            "Navigation",
+            "Forms",
+            "CLI",
+            "Dependency Injection",
+            "Data Display",
+            "Handling Events",
+            "Custom Pipes",
+            "User Input",
+            "Life Cycle Hooks",
+            "Nested Containers",
+            "Services"
+          ]
+        },
+        {
+          "id": "k",
+          "tittle": "Skills Required to become a Backend/Server-side Developer.",
+          "subTittles": [
+            "Java - 20 days",
+            "Servlet / JSP – 2 days",
+            "Database (MySQL) – 1 day",
+            "Maven – 1 day",
+            "Hibernate framework.  – 2 days",
+            "Spring Framework (Core, AOP, MVC, DATA JPA, JDBC) – 10 days",
+            "Server (Tomcat) – 1 day",
+            "Web Service (REST & SOAP) – 1 day",
+            "Junit (Unit Testing) – 1 day",
+            "Security – 1 day",
+            "Git – 1 day",
+            "Agile – 1 day",
+            "DevOps Basics – 1 day",
+            "Docker – 1 day",
+            "Kubernetes – 1 day",
+            "Cloud Computing (Basics) – 1 day",
+            "Unix Basics – 1 day",
+            "Basic exposure to HTML and CSS – 1 day",
+            "XML, YML – 1 day"
+          ]
+        },
+        {
+          "id": "l",
           "tittle": "Core Java.",
           "subTittles": [
             "How to install Java",
@@ -81,7 +265,7 @@
           ]
         },
         {
-          "id": "c",
+          "id": "m",
           "tittle": "Servlet/JSP",
           "subTittles": [
             "Static web pages, Dynamic Web application",
@@ -112,7 +296,7 @@
           ]
         },
         {
-          "id": "d",
+          "id": "n",
           "tittle": "Database",
           "subTittles": [
             "What is Database?",
@@ -132,7 +316,28 @@
           ]
         },
         {
-          "id": "e",
+          "id": "o",
+          "tittle": "Maven",
+          "subTittles": [
+            "What is Maven",
+            "How to set up maven",
+            "Create/Import a Maven project in eclipse",
+            "Maven POM explaination",
+            "How to define the dependency",
+            "groupID/artfiactId/Version of project  ",
+            "Packaging types - Default Package type",
+            "Project Inheritance in maven",
+            "Multi Module Projects in Maven",
+            "Maven project structure",
+            "Maven transitive dependency",
+            "Maven dependency scope",
+            "Maven Repositories - Local, Intermediate, public",
+            "Maven Plugins",
+            "Maven support in eclipse"
+          ]
+        },
+        {
+          "id": "p",
           "tittle": "Hibernate",
           "subTittles": [
             "What is Hibernate?",
@@ -151,7 +356,7 @@
           ]
         },
         {
-          "id": "f",
+          "id": "q",
           "tittle": "Spring",
           "subTittles": [
             "What is Spring?",
@@ -164,7 +369,7 @@
           ]
         },
         {
-          "id": "g",
+          "id": "r",
           "tittle": "Spring Core",
           "subTittles": [
             "What is Bean",
@@ -176,7 +381,7 @@
           ]
         },
         {
-          "id": "h",
+          "id": "s",
           "tittle": "Spring AOP",
           "subTittles": [
             "What is AOP and benefits",
@@ -185,7 +390,7 @@
           ]
         },
         {
-          "id": "i",
+          "id": "t",
           "tittle": "Spring MVC",
           "subTittles": [
             "What is the use of Spring MVC?",
@@ -206,7 +411,7 @@
           ]
         },
         {
-          "id": "j",
+          "id": "u",
           "tittle": "Spring JDBC",
           "subTittles": [
             "What is DataSource?",
@@ -217,7 +422,7 @@
           ]
         },
         {
-          "id": "k",
+          "id": "v",
           "tittle": "Spring Data JPA",
           "subTittles": [
             "Benefit of Spring DATA JPA",
@@ -229,7 +434,7 @@
           ]
         },
         {
-          "id": "l",
+          "id": "w",
           "tittle": "Spring Boot",
           "subTittles": [
             "How to create a Spring boot application?",
@@ -243,6 +448,135 @@
             "How to run the Spring boot application",
             "@Value , @ConfigurationProperties"
           ]
+        },
+        {
+          "id": "x",
+          "tittle": "Server",
+          "subTittles": [
+            "What is Server?",
+            "Types of Server?",
+            "What is WebServer?",
+            "How to install Tomcate Server?",
+            "How to deploy a application in the Tomcate Server"
+          ]
+        },
+        {
+          "id": "y",
+          "tittle": "Webservice",
+          "subTittles": [
+            "What is Distributed Computing?",
+            "What is SOA Architecture?",
+            "What is Webservice?",
+            "What is interoperable?",
+            "Homogeneous/Heterogeneous Applications?",
+            "Transport protocol vs Message protocol?",
+            "Synchronous vs Asynchronous?",
+            "Webservice Benefits?",
+            "Types of Webservice?"
+          ]
+        },
+        {
+          "id": "z",
+          "tittle": "Junit",
+          "subTittles": [
+            "Type of Testing?",
+            "What is unit testing? who will do this?",
+            "Testing frameworks?",
+            "Writing first JUnit test?",
+            "JUnit test lifecycle and related annotations?",
+            "What is Mock Frameworks?",
+            "Writing JUnit test with Mocktio?",
+            "Mocktio annotations?"
+          ]
+        },
+        {
+          "id": "ab",
+          "tittle": "Security",
+          "subTittles": [
+            "Security Introduction",
+            "Network/application/database data Security",
+            "HTTPS and SSL Certificate?",
+            "SSL Authentication?",
+            "SSL Authentication?",
+            "Two-factor authentication?",
+            "Securing API with JWT?"
+          ]
+        },
+        {
+          "id": "ac",
+          "tittle": "Git",
+          "subTittles": [
+            "What is Version Control? Git, SVN, CVS",
+            "What is repository?",
+            "How to install Git on Windows?",
+            "How to create a account in GitHub?",
+            "How to create a repository in GitHub?",
+            "Setting Up SSH Authentication to use GitHub?",
+            "Git commands?",
+            "How to create braches? ",
+            "What is merging?",
+            "What is pull request in Git?",
+            "GitHub vs Bitbucket?"
+          ]
+        },
+        {
+          "id": "ad",
+          "tittle": "Agile",
+          "subTittles": [
+            "What is AgileModel-Scrum?",
+            "Scrum Team?",
+            "Role of each member in the Scrum Team?",
+            "Product Planning/Spring Planning/Sprint Execution",
+            "Sprint Review/Spring Retrospective Meeting"
+          ]
+        },
+        {
+          "id": "ae",
+          "tittle": "Docker",
+          "subTittles": [
+            "Docker Introduction (VM, Container)",
+            "Docker Architecture",
+            "Installing Docker Desktop on window",
+            "Building Docker images - using dockerFile",
+            "How to create/drop Docker container",
+            "How to create MySQL DB, Tomcat Server using Docker image",
+            "Docker commands"
+          ]
+        },
+        {
+          "id": "af",
+          "tittle": "Kubernetes",
+          "subTittles": [
+            "What is Kubernetes? Why Kubernetes?",
+            "Kubernetes Architecture",
+            "Kubernetes Architecture",
+            "kubectl commands ",
+            "What us PODs?",
+            "Replication Controllers and ReplicaSets?",
+            "Deploy/Scaleup an application using Kubernetes?"
+          ]
+        },
+        {
+          "id": "ag",
+          "tittle": "Cloud Computing(Basics)",
+          "subTittles": [
+            "What is Cloud Computing?",
+            "Service Models?",
+            "Essential Characteristics?",
+            "What is Data Center?",
+            "How to create a instance in AWS?",
+            "How to run a Spring Boot application in AWS?"
+          ]
+        },
+        {
+          "id": "ah",
+          "tittle": "Unix(Basics)",
+          "subTittles": [
+            "Unix basic commands",
+            "How to install Java in Unix",
+            "How to use Putty",
+            "How to use WinScp"
+          ]
         }
       ]
     },
@@ -253,8 +587,8 @@
       "status": "Not Yet Started",
       "price": 12000,
       "instructor": "S Balachander",
-      "noOfSessions": 20,
-      "effectiveCourseHours": 30,
+      "noOfSessions": "20 Days",
+      "effectiveCourseHours": 20,
       "instructionMode": "Online / Offline",
       "description": "This training covers all the required skills of UI Development...",
       "shortDesc": [
@@ -452,10 +786,10 @@
       "tittle": "Java Backend Developer Training",
       "subTittle": "Java Developer",
       "status": "Not Yet Started",
-      "price": 18000,
+      "price": 12000,
       "instructor": "S Balachander",
       "noOfSessions": "50 Days",
-      "effectiveCourseHours": 45,
+      "effectiveCourseHours": 50,
       "instructionMode": "Online / Offline",
 
       "description": "This is an training for maling u a java full stack developer...",
@@ -464,7 +798,7 @@
         "Basics to Advanced Course",
         "Get hands-on training with industry projects"
       ],
-      "imageLocation": "./images/Java.png",
+      "imageLocation": "./images/Java_Backend_Dev.webp",
       "courseContents": [
         {
           "id": "a",

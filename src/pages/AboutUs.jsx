@@ -9,11 +9,11 @@ const AboutUs = () => (
     <div className="about">
       <Container>
         <Row>
-          <Col>
+          {/* <Col>
             <div className="img_wrapper">
               <img src={about} alt="about"></img>
             </div>
-          </Col>
+          </Col> */}
 
           <Col sm>
             <div className="about_content">

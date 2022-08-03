@@ -83,7 +83,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            Lifters Consultancy Service
+            Lifter Consultancy Service
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
